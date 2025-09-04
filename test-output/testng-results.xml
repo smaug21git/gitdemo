@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-31T19:21:24 IST" name="Default suite" finished-at="2025-07-31T19:21:50 IST" duration-ms="25997">
+    <groups>
+      <group name="SmokeTest">
+        <method signature="CreatecontactTest.createContact()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" name="createContact" class="com.comcast.crm.ALL_org_contactTEST.CreatecontactTest"/>
+      </group> <!-- SmokeTest -->
+      <group name="RegressionTest">
+        <method signature="CreatecontactTest.createContactwithOrgTest()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" name="createContactwithOrgTest" class="com.comcast.crm.ALL_org_contactTEST.CreatecontactTest"/>
+        <method signature="CreatecontactTest.createContactwithsupportdateTest()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" name="createContactwithsupportdateTest" class="com.comcast.crm.ALL_org_contactTEST.CreatecontactTest"/>
+      </group> <!-- RegressionTest -->
+    </groups>
+    <test started-at="2025-07-31T19:21:24 IST" name="Default test" finished-at="2025-07-31T19:21:50 IST" duration-ms="25997">
+      <class name="com.comcast.crm.ALL_org_contactTEST.CreatecontactTest">
+        <test-method is-config="true" signature="beforesuit()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:24 IST" name="beforesuit" finished-at="2025-07-31T19:21:24 IST" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuit -->
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:24 IST" name="beforetest" finished-at="2025-07-31T19:21:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method is-config="true" signature="beforeclass(java.lang.String)[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:24 IST" name="beforeclass" finished-at="2025-07-31T19:21:26 IST" duration-ms="2164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="loginpage()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:26 IST" name="loginpage" finished-at="2025-07-31T19:21:28 IST" duration-ms="1706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpage -->
+        <test-method signature="createContact()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:28 IST" name="createContact" finished-at="2025-07-31T19:21:28 IST" duration-ms="314" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Cell.getStringCellValue()" because the return value of "org.apache.poi.ss.usermodel.Row.getCell(int)" is null
+at com.comcast.crm.generic.fileutility.ExcelUtility.getDataFromExcel(ExcelUtility.java:18)
+at com.comcast.crm.ALL_org_contactTEST.CreatecontactTest.createContact(CreatecontactTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:29 IST" name="aftermethod" finished-at="2025-07-31T19:21:30 IST" duration-ms="1542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="loginpage()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:30 IST" name="loginpage" finished-at="2025-07-31T19:21:31 IST" duration-ms="1344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpage -->
+        <test-method signature="createContactwithOrgTest()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:31 IST" name="createContactwithOrgTest" finished-at="2025-07-31T19:21:36 IST" duration-ms="4804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactwithOrgTest -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:36 IST" name="aftermethod" finished-at="2025-07-31T19:21:37 IST" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="loginpage()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:37 IST" name="loginpage" finished-at="2025-07-31T19:21:38 IST" duration-ms="1397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpage -->
+        <test-method signature="createContactwithsupportdateTest()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:38 IST" name="createContactwithsupportdateTest" finished-at="2025-07-31T19:21:49 IST" duration-ms="11019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactwithsupportdateTest -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:49 IST" name="aftermethod" finished-at="2025-07-31T19:21:50 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:50 IST" name="afterclass" finished-at="2025-07-31T19:21:50 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:50 IST" name="aftertest" finished-at="2025-07-31T19:21:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+        <test-method is-config="true" signature="aftersuit()[pri:0, instance:com.comcast.crm.ALL_org_contactTEST.CreatecontactTest@4082ba93]" started-at="2025-07-31T19:21:50 IST" name="aftersuit" finished-at="2025-07-31T19:21:50 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuit -->
+      </class> <!-- com.comcast.crm.ALL_org_contactTEST.CreatecontactTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
